@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Machine</title>
+    <link  href="frases.css" rel="stylesheet"/>
+    <link  href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">   
+    <!--Link libreria para jQuery y animate para las acciones css-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!--Libreria que sirve para hacer cambios a los fondos con animate de jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="container">
+    <!--AREA DE CITA -->    
+        <div id="quote-box">
+            <div id="text" class="fa fa-quote-left text-center"><span id="text2"></span></div>
+            <div id="author" class="text-right"><span id="author2"></span></div>
+            <div id="botones">
+                <div id="botones-link">
+                    <a  id="tweet-quote" class="fab fa-twitter" target="_blank" href="#" title="Publica esta cita en tu twitter"></a>
+                    <a id="tumblr-quote" class="fab fa-tumblr" target="_blank" href="#" title="Publica esta cita en tu tumblr"></a>
+                </div>
+                <div id="boton-accion">
+                    <button id="new-quote" title="Haz click para una nueva cita aleatoria">
+                        <span>Nueva Cita</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--AREA de PIE DE PAGINA -->
+        <div id="pie">by 
+            <a href="https://github.com/GemmaClaverodelMoral" 
+            target="_blank">gemmaclaverodelmoral
+            </a>
+        </div>
+    </div>   
+    <!-- ARCHIVO JS CON LA LOGICA DE LA APLICACION --> 
+    <script src="frases.js"></script> 
+</body>
+
+</html>
